@@ -1,0 +1,2 @@
+This is code for a talk I gave at some scala meetups. Here is a link to the slides. https://docs.google.com/presentation/d/1-zRIMcekox0bgoBpQkmcwvuyD-ruXXiCp4gW0X4UY4c/present#slide=id.g4cb8e7a_0_138.
+ All the examples are self contained in individual files.
