@@ -106,8 +106,8 @@ object NestedStateMachines {
     /* main receive block */
     def receive :Receive = {
       case msg if handleEmpty.isDefinedAt( msg ) && state == EMPTY => handleEmpty( msg )
-      case msg if handleAuthorizing.isDefinedAt( msg ) && state == AUTHORIZING => handleEmpty( msg )
-      case msg if handleRunning.isDefinedAt( msg ) && state == RUNNING => handleEmpty( msg )
+      case msg if handleAuthorizing.isDefinedAt( msg ) && state == AUTHORIZING => handleAuthorizing( msg )
+      case msg if handleRunning.isDefinedAt( msg ) && state == RUNNING => handleRunning( msg )
       case msg => // decide what to do with unhandled.. drop, buffer, reply with error etc..
     }
     
